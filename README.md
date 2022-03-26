@@ -13,3 +13,10 @@ curl -X POST "http://localhost:3000/api/v1/urls" -d "url=<original_url>&expireAt
 #response
 {"_id":"623e98f4017b4d46d0000001","shortUrl":"http://localhost:3000/623e98f4017b4d46d0000001"}
 ```
+
+```bash
+curl -X GET "http://localhost:3000/623e98f4017b4d46d0000001"
+
+#response
+Redirecting to <original_url>
+```
